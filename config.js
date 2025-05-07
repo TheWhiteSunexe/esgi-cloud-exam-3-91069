@@ -1,12 +1,12 @@
 module.exports = {
   s3: {
-    accessKeyId: 'VUVGHISOY9L8DIQURTLM', // TODO
-    secretAccessKey: 'XVK1OcWLycfQAo18OnbD6vsEGcaeGeZW2P7zVAMK', // TODO
-    endpoint: 's3.eu-west-2.wasabisys.com', // TODO
-    bucket: 'esgi-cloud-exam-bucket-91069', // TODO
+    accessKeyId:     process.env.S3_ACCESS_KEY_ID,
+    secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+    endpoint:        process.env.S3_ENDPOINT,
+    bucket:          process.env.S3_BUCKET,
   },
   suffix: {
     small: '_small.jpg',
-    full: '_full.jpg'
+    full:  '_full.jpg'
   }
-}
+};
